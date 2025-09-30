@@ -1,0 +1,16 @@
+
+
+Building a new DB, current time: 09/29/2025 18:58:09
+New DB name:   D:\MESTRADO\DISSERTACAO\ViruScope\examples\output\blastdb\blastalign
+New DB title:  D:\MESTRADO\DISSERTACAO\ViruScope\examples\sample_data\reference_aligned.fasta
+Sequence type: Nucleotide
+Deleted existing Nucleotide BLAST database named D:\MESTRADO\DISSERTACAO\ViruScope\examples\output\blastdb\blastalign
+Keep MBits: T
+Maximum file size: 3000000000B
+Warning: [makeblastdb] 
+Input file D:\MESTRADO\DISSERTACAO\ViruScope\examples\sample_data\reference_aligned.fasta does NOT appear to be FASTA (processing anyway).
+Advise validating database with 'blastdbcheck -dbtype [prot|nucl] -db ${DBNAME}'
+
+Adding sequences from FASTA; added 1 sequences in 0.0006135 seconds.
+
+
