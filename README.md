@@ -41,12 +41,12 @@ pip install -r requirements.txt
 
 ## Usage
 
-The main functionalities can be accessed through the classes defined in `sourcecode.py`. Below are some short usage examples:
+The main functionalities can be accessed through the classes defined in `viruscopeCLI.py`. Below are some short usage examples:
 
 ### Example 1: Fetching MEDLINE Records and scrape PDFs with AROLit
 
 ```python
-from sourcecode import arolit
+from viruscopeCLI import arolit
 
 # Initialize the arolit class
 arolit_instance = arolit()
@@ -61,7 +61,7 @@ arolit_instance.oligos_to_csv_mult("examples/papers/", "literature_primers.csv")
 ### Example 2: Primer Search
 
 ```python
-from sourcecode import viruscope
+from viruscopeCLI import viruscope
 
 # Initialize the viruscope class
 viruscope_instance = viruscope()
@@ -70,7 +70,7 @@ viruscope_instance = viruscope()
 primers = viruscope_instance.load_primers_from_csv("sample_primers.csv")
 
 # Generate primers from a genome file
-viruscope_instance.generate_primers("sample_genome.fasta", "SampleVirus", "output_directory", "primers.fasta", 18, 25)
+viruscope_instance.generate_primers("sample_genome.fasta", "SampleVirus", "primers.fasta", 18, 25)
 ```
 
 ### Example 3: Running BLAST
@@ -82,3 +82,5 @@ viruscope_instance.make_blastdb_ref("blastdirectory", "reference_genome.fasta")
 # Run BLAST against the reference genome
 viruscope_instance.run_blast("primers.fasta", "blastdb_path", "output_directory")
 ```
+
+For more examples, consult the usage folder.
